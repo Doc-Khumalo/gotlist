@@ -56,6 +56,12 @@
                             <li><a id="AboutButton" href="#">About</a></li>
                             <li ><a data-toggle="modal" data-target="#myFaqModal" href="">FAQ's</a></li>
                             <li><a class="blog-nav-item " style="cursor:pointer;" ng-click="logout();">Logout</a></li>
+                            <li><form name="_xclick" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                <input type="hidden" name="cmd" value="_cart">
+                                <input type="hidden" name="business" value="">
+                                <input type="image" src="https://www.paypal.com/en_US/i/btn/view_cart.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+                                <input type="hidden" name="display" value="1">
+                            </form></li>
                         </ul>
                     </div>
                 </div>
@@ -416,6 +422,15 @@
                     <p>Some text in the modal.</p>
                     <p>Some text in the modal.</p>
                     <p>Some text in the modal.</p>
+                    <form name="_xclick" target="paypal" action="" method="post">
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="business" value="">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="hidden" name="item_name" value="HTML book">
+                        <input type="hidden" name="amount" value="24.99">
+                        <input type="image" src="http://www.paypal.com/en_US/i/btn/sc-but-01.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+                        <input type="hidden" name="add" value="1">
+                    </form>
 
                     <!--<img src="https://pgcpsmess.files.wordpress.com/2014/03/bald-eagle.jpg" alt="">-->
                 </div>
