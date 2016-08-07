@@ -1,0 +1,32 @@
+body {
+  font-size: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #f1f1f1; }
+
+h1, h2, h3, h4, h5, h6, p, li, input {
+  margin-bottom: 1rem; }
+
+a {
+  color: #cc3f85; }
+
+a:hover {
+  color: #b23430; }
+
+.container-block {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: snow; }
+
+.random {
+  margin: auto; }
+
+.main-container {
+  margin: auto;
+  padding: inherit; }
+  .main-container li {
+    margin: auto; }
+
+.test {
+  width: 100%; }
+
+/*# sourceMappingURL=app.css.map */

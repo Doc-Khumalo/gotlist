@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAsBA,IAAK;EACH,SAAS,EAAC,IAAI;EACd,WAAW,EAAE,4BAA4B;EACzC,UAAU,EAAC,OAAO;;AAEpB,oCAAqC;EACnC,aAAa,EAAC,IAAI;;AAEpB,CAAE;EACA,KAAK,EAAC,OAAO;;AAEf,OAAQ;EACN,KAAK,EAAC,OAAO;;ACjCf,gBAAiB;EACf,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,gBAAgB,EAAE,IAAI;;AAExB,OAAQ;EACN,MAAM,EAAE,IAAI",
+"sources": ["../scss/_base.scss","../scss/gotlist.scss"],
+"names": [],
+"file": "gotlist.css"
+}
