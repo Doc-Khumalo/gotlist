@@ -260,131 +260,133 @@ img {
 .hide {
   display: none; }
 
-.alternative-table {
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  padding: 0.5rem;
-  border-radius: 8px;
+.new-table {
   height: 500px;
-  overflow-y: scroll; }
-  .alternative-table body {
-    background: #cacaca;
-    margin: 0;
-    padding: 20px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300; }
-  .alternative-table #table {
-    display: table;
-    width: 100%;
-    background: #fff;
-    margin: 0;
+  overflow: auto;
+  /* Set box sizing to border-box */
+  /* Insert header name before each row on mobile */
+  /* CSS border triangle trick */
+  /* Flip CSS border triangle on active */
+  /* Media Queries */
+  /* ===========
+      Styling
+     =========== */ }
+  .new-table html {
     box-sizing: border-box; }
-    @media (max-width: 760px) {
-      .alternative-table #table {
-        padding-left: 2rem; } }
-  .alternative-table .row {
-    display: table-row; }
-  .alternative-table .cell {
-    display: table-cell;
-    padding: 1.75rem;
-    border-bottom: 1px solid #e5e5e5;
-    text-align: center; }
-    @media (max-width: 760px) {
-      .alternative-table .cell {
-        padding: 0rem; } }
-    @media (min-width: 992px) {
-      .alternative-table .cell {
-        padding: 2.5rem; } }
-  .alternative-table .primary {
-    text-align: left; }
-  .alternative-table input[type="radio"],
-  .alternative-table input[type="checkbox"] {
+  .new-table *,
+  .new-table *:before,
+  .new-table *:after {
+    box-sizing: inherit; }
+  .new-table .table {
+    width: 100%; }
+  .new-table .tr:first-child {
     display: none; }
-  @media only screen and (max-width: 760px) {
-    .alternative-table body {
-      padding: 0; }
-    .alternative-table #table {
-      display: block;
-      margin: 44px 0 0 0; }
-    .alternative-table .row {
-      position: relative;
-      display: block;
-      border-bottom: 1px solid #ccc; } }
-  @media only screen and (max-width: 760px) and (max-width: 760px) {
-    .alternative-table .row {
-      margin-bottom: auto;
-      margin-right: auto; } }
-  @media only screen and (max-width: 760px) {
-    .alternative-table .header-row {
+  .new-table .rh > span {
+    display: block;
+    position: relative; }
+  .new-table .td:before {
+    content: attr(data-header);
+    float: left;
+    width: 25%; }
+  .new-table .table .rh > span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top-color: black;
+    z-index: 2;
+    right: 15px;
+    top: 14px;
+    pointer-events: none; }
+  .new-table .table .rh.active > span:after {
+    border-top-color: transparent;
+    border-bottom-color: black;
+    top: 5px; }
+  @media screen and (min-width: 768px) {
+    .new-table .rh {
       display: none; }
-    .alternative-table .cell {
-      display: block;
-      border: none;
-      position: relative;
-      height: 45px;
-      line-height: 45px;
-      text-align: left; }
-    .alternative-table .primary:after {
-      content: "";
-      display: block;
-      position: absolute;
-      right: 20px;
-      top: 18px;
-      z-index: 2;
-      width: 0;
-      height: 0;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-right: 10px solid #ccc; }
-    .alternative-table .cell:nth-of-type(n+2) {
-      display: none; }
-    .alternative-table input[type="radio"],
-    .alternative-table input[type="checkbox"] {
-      display: block;
-      position: absolute;
-      z-index: 1;
-      width: 99%;
-      height: 100%;
-      opacity: 0; }
-    .alternative-table input[type="radio"]:checked,
-    .alternative-table input[type="checkbox"]:checked {
-      z-index: -1; }
-    .alternative-table input[type="radio"]:checked ~ .cell,
-    .alternative-table input[type="checkbox"]:checked ~ .cell {
-      display: block;
-      border-bottom: 1px solid #eee; }
-    .alternative-table input[type="radio"]:checked ~ .cell:nth-of-type(n+2),
-    .alternative-table input[type="checkbox"]:checked ~ .cell:nth-of-type(n+2) {
-      background: #e0e0e0; }
-    .alternative-table input[type="radio"]:checked ~ .cell:nth-of-type(n+2):before,
-    .alternative-table input[type="checkbox"]:checked ~ .cell:nth-of-type(n+2):before {
-      content: attr(data-label);
-      display: inline-block;
-      width: 60px;
-      background: #999;
-      border-radius: 10px;
-      height: 20px;
-      margin-right: 10px;
-      font-size: 12px;
-      line-height: 20px;
-      text-align: center;
-      color: white; }
-    .alternative-table input[type="radio"]:checked ~ .primary,
-    .alternative-table input[type="checkbox"]:checked ~ .primary {
-      border-bottom: 2px solid #999; }
-    .alternative-table input[type="radio"]:checked ~ .primary:after,
-    .alternative-table input[type="checkbox"]:checked ~ .primary:after {
-      position: absolute;
-      right: 18px;
-      top: 22px;
-      border-right: 10px solid transparent;
-      border-left: 10px solid transparent;
-      border-top: 10px solid #ccc;
-      z-index: 2; } }
-  .alternative-table a {
-    color: #FFFFFF;
-    text-decoration: none; }
+    .new-table .table {
+      display: table;
+      width: 750px; }
+    .new-table .thead {
+      display: table-header-group; }
+    .new-table .tbody {
+      display: table-row-group; }
+    .new-table .tr,
+    .new-table .tr:first-child {
+      display: table-row; }
+    .new-table .th,
+    .new-table .td {
+      display: table-cell; }
+    .new-table .td:before {
+      content: ""; } }
+  .new-table body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+  .new-table .table {
+    border: 1px solid #54c3e8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    overflow: hidden; }
+  .new-table .th,
+  .new-table .rh > span {
+    background: #74dbfc; }
+  .new-table .tr .td:nth-child(even) {
+    background: #dcf4fc; }
+  .new-table .th,
+  .new-table .tr .td,
+  .new-table .rh,
+  .new-table .rh.active:nth-last-child(2) {
+    border-bottom: 1px solid #54c3e8; }
+  .new-table .rh:nth-last-child(2) {
+    border-bottom: none; }
+  .new-table .td {
+    padding: 5px 15px; }
+  .new-table .rh > span {
+    padding: 5px 15px;
+    font-size: 1.25em;
+    font-weight: 600; }
+  .new-table .tr:first-child,
+  .new-table .tr:last-child {
+    border-bottom: none; }
+  .new-table .tr:last-child .td:last-child {
+    border-bottom: none; }
+  @media screen and (min-width: 768px) {
+    .new-table {
+      /* Unfortunately we cannot just use :nth-child(odd/even) since the
+         .rh elements are interspersed in there. Until CSS 4 I don't
+         think there will be a way to style alterating rows for this 
+         without using JavaScript or whatever builds the table to add
+         a special class. */
+      /* Reset Mobile Styles */ }
+      .new-table .th,
+      .new-table .td,
+      .new-table .tr,
+      .new-table .tr .td:last-child {
+        border-bottom: 1px solid #54c3e8; }
+      .new-table .th,
+      .new-table .td {
+        padding: 5px; }
+      .new-table .th {
+        border-right: 1px solid #00bfff; }
+      .new-table .td {
+        border-right: 1px solid #54c3e8; }
+      .new-table .th:last-child,
+      .new-table .td:last-child {
+        border-right: none; }
+      .new-table .tr.alternate-highlight {
+        background: #dcf4fc; }
+      .new-table .tr:last-child .td:first-child {
+        border-top: none; }
+      .new-table .tr:last-child .td {
+        border-bottom: none; }
+      .new-table .tr .td:nth-child(even) {
+        background: none; } }
 
 .modal-open .modal {
   overflow-x: hidden;
@@ -5593,10 +5595,16 @@ p {
   font-size: 1.875rem; }
 
 .container-fluid {
-  background-color: lightgray;
+  background-color: aliceblue;
   margin-top: 1rem; }
 
 input[type="image"] {
   margin-left: 25rem; }
+
+.navbar-default .navbar-nav > li > a {
+  color: black; }
+
+.row.alternate-highlight {
+  background: #dcf4fc; }
 
 /*# sourceMappingURL=app.css.map */

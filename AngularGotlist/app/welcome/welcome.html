@@ -53,7 +53,7 @@
                         <ul class="nav navbar-nav navbar-right nav-bar-options">
                             <li><a id="HomeButton" href="#/welcome" data-toggle="collapse" data-target=".navbar-collapse.in">Home</a>
                             </li>
-                            <li><a id="AboutButton" href="#">About</a></li>
+                            <li class="AboutButton"><a id="AboutButton" href="#">About</a></li>
                             <li ><a data-toggle="modal" data-target="#myFaqModal" href="">FAQ's</a></li>
                             <li><a class="blog-nav-item " style="cursor:pointer;" ng-click="logout();">Logout</a></li>
                             <li><form name="_xclick" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -92,7 +92,8 @@
             <div class="container">
                 <div class="Carousel-Container">
                     <ul class="Carousel">
-                        <li class="Items Front" data-toggle="modal" data-target="#myModal"><img src="/images/eagle_1.jpg"/></li>
+                        <!--<li class="Items Front" data-toggle="modal" data-target="#myModal"><img src="/images/eagle_1.jpg"/></li>-->
+                        <li class="Items Front"><div class="image-pop" data-toggle="modal" data-target="#myModal"><img src="/images/eagle_1.jpg"></div></li>
                         <li class="Items Left">2</li>
                         <li class="Items Left2">3</li>
                         <li class="Items Right">4</li>
@@ -106,9 +107,16 @@
 
 
 
-    <div class="container table-container about_us">
+    <div class="container table-container about_us" id="#aboutus">
         <div class="about-us-container">
-            about us section
+            <p>about us section Paul jjgjkg gjggjg jgjgjgjgjg jg jgjgj jgjgjjgjgjgjggjggjgjgggjgjgkgjghjghjghj gyguyuyuyiksksksksksks s 
+                kskskskksk about us section Paul jjgjkg gjggjg jgjgjgjgjg jg jgjgj jgjgjjgjgjgjggjggjgjgggjgjgkgjghjghjghj 
+                gyguyuyuyiksksksksksks s kskskskksk about us section Paul jjgjkg gjggjg jgjgjgjgjg jg jgjgj jgjgjjgjgjgjggjggjgjgggjgj
+                gkgjghjghjghj gyguyuyuyiksksksksksks s kskskskksk </p>
+                <p>about us section Paul jjgjkg gjggjg jgjgjgjgjg jg jgjgj jgjgjjgjgjgjggjggjgjgggjgjgkgjghjghjghj gyguyuyuyiksksksksksks s 
+                kskskskksk about us section Paul jjgjkg gjggjg jgjgjgjgjg jg jgjgj jgjgjjgjgjgjggjggjgjgggjgjgkgjghjghjghj 
+                gyguyuyuyiksksksksksks s kskskskksk about us section Paul jjgjkg gjggjg jgjgjgjgjg jg jgjgj jgjgjjgjgjgjggjggjgjgggjgj
+                gkgjghjghjghj gyguyuyuyiksksksksksks s kskskskksk </p>
         </div>
     </div>
     <!--initial table-->
@@ -128,6 +136,41 @@
                 </form>
             </div>
 
+<div class="new-table">
+    <div class="table mobile-accordion">
+			  <div class="thead">
+				    <div class="tr">
+                        <div class="th">Icon</div>
+                        <div class="th">Name</div>
+                        <div class="th">Promoter</div>
+				    </div>
+			  </div>
+			  <div class="tbody">
+				    <!--<div class="rh active"><span>Gordon, Jim</span></div>
+				    <div class="tr">
+                        <div class="td" data-header="ID #:">54321</div>
+                        <div class="td" data-header="First:">Jim</div>
+                        <div class="td" data-header="Last:">Gordon</div>
+                        <div class="td" data-header="Phone:">123-4567</div>
+                        <div class="td" data-header="Email:">jgordon@gothampd.gov</div>
+				    </div>
+                    <div class="rh"><span>Joker, The</span></div>
+				    <div class="tr">
+                        <div class="td" data-header="ID #:">67890</div>
+                        <div class="td" data-header="First:">The</div>
+                        <div class="td" data-header="Last:">Joker</div>
+                        <div class="td" data-header="Phone:">890-1234</div>
+                        <div class="td" data-header="Email:">joker@iheartbatman.com</div>
+				    </div>-->
+				    <div class="rh"><span>Wayne, Bruce</span></div>
+				    <div class="tr" ng-repeat="night in raves | orderBy:sortType:sortReverse | filter:searchListings">
+                        <div class="td" data-header="Icon:">{{ "image" }}</div>
+                        <div class="td" data-header="Name:">{{ night.name }}</div>
+                        <div class="td" data-header="Promoter:">{{ night.promoter }}</div>
+				    </div>
+			  </div>
+		</div>
+</div>
 
 
             <!--<div class="container">-->
@@ -142,7 +185,7 @@
 
 
             <!--alternative table-->
-            <div class="alternative-table">
+            <!--<div class="alternative-table">
                 <div id="table">
                     <div class="header-row row">
                            <span class="cell primary">
@@ -168,9 +211,6 @@
                     </div>
                     <div class="row" ng-repeat="night in raves | orderBy:sortType:sortReverse | filter:searchListings">
                         <input type="radio" name="expand">
-                        <!--image-->
-                        <!--<span class="cell primary" data-label="Icon" data-toggle="modal" data-target="#myModal">{{ "image" }}</span>-->
-
                         <span class="cell primary" data-label="Icon">{{ "image" }}</span>
                         <span class="cell primary" data-label="Name">{{ night.name }}</span>
                         <span class="cell primary" data-label="Promoter">{{ night.promoter }}</span>
@@ -178,7 +218,7 @@
 
                 </div>
 
-            </div>
+            </div>-->
 
 
             <!--<div role="main" class="container theme-showcase">-->
