@@ -5607,4 +5607,8 @@ input[type="image"] {
 .row.alternate-highlight {
   background: #dcf4fc; }
 
+@media (max-width: 760px) {
+  .about-us-container h2 {
+    text-align: center; } }
+
 /*# sourceMappingURL=app.css.map */

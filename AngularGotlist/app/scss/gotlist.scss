@@ -8086,4 +8086,11 @@ input[type="image"] {
 }
 .row.alternate-highlight {
 		background: #dcf4fc;
-	}
+}
+.about-us-container{
+  h2 {
+    @include breakpoint(xs) {
+      text-align: center;
+    }
+  }
+}
