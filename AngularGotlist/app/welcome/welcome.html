@@ -9,13 +9,14 @@
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="blog.css" rel="stylesheet">
     <link data-require="bootstrap-css@3.x" data-semver="3.1.1" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    
     <link href="/Users/acd818/LeslieStuff/GotList/AngularJS_Firebase_Part8/app/css/gotlist.css" rel="stylesheet">
 
-    <script data-require="angular.js@*" data-semver="1.3.0-beta.5" src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>
+    <!--<script data-require="angular.js@*" data-semver="1.3.0-beta.5" src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>
     <script data-require="ui-bootstrap@*" data-semver="0.10.0" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.11.0/ui-bootstrap-tpls.js"></script>
 
 
-    <script data-require="ui-bootstrap@*" data-semver="0.12.1" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.min.js"></script>
+    <script data-require="ui-bootstrap@*" data-semver="0.12.1" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.min.js"></script>-->
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -147,22 +148,6 @@
 				    </div>
 			  </div>
 			  <div class="tbody">
-				    <!--<div class="rh active"><span>Gordon, Jim</span></div>
-				    <div class="tr">
-                        <div class="td" data-header="ID #:">54321</div>
-                        <div class="td" data-header="First:">Jim</div>
-                        <div class="td" data-header="Last:">Gordon</div>
-                        <div class="td" data-header="Phone:">123-4567</div>
-                        <div class="td" data-header="Email:">jgordon@gothampd.gov</div>
-				    </div>
-                    <div class="rh"><span>Joker, The</span></div>
-				    <div class="tr">
-                        <div class="td" data-header="ID #:">67890</div>
-                        <div class="td" data-header="First:">The</div>
-                        <div class="td" data-header="Last:">Joker</div>
-                        <div class="td" data-header="Phone:">890-1234</div>
-                        <div class="td" data-header="Email:">joker@iheartbatman.com</div>
-				    </div>-->
 				    <div class="rh"><span>Name of Rave goes here, Location (example)</span></div>
 				    <div class="tr" ng-repeat="night in raves | orderBy:sortType:sortReverse | filter:searchListings">
                         <div class="td" data-header="Icon:">{{ "image" }}</div>

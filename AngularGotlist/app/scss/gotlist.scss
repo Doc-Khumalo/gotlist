@@ -402,7 +402,6 @@ body {
 }
 
 .table {
-	border: 1px solid #54c3e8;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -425,7 +424,6 @@ body {
 .tr .td,
 .rh,
 .rh.active:nth-last-child(2) {
-	border-bottom: 1px solid #54c3e8;
 }
 
 .rh:nth-last-child(2) {
@@ -433,7 +431,7 @@ body {
 }
 
 .td {
-	padding: 5px 15px;
+	padding: 0.75rem 15px;
 }
 
 .rh > span {
@@ -456,20 +454,11 @@ body {
 	.td,
 	.tr,
 	.tr .td:last-child {
-		border-bottom: 1px solid #54c3e8;
 	}
 
 	.th,
 	.td {
-		padding: 5px;
-	}
-
-	.th {
-		border-right: 1px solid #00bfff;
-	}
-
-	.td {
-		border-right: 1px solid #54c3e8;
+    padding: 2rem;
 	}
 
 	.th:last-child,
