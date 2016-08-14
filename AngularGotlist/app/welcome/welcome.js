@@ -186,7 +186,7 @@ angular.module('myApp.welcome', ['ngRoute'])
     
     $(".AboutButton").click(function() {
         $('html,body').animate({
-            scrollTop: $(".about-us-container").offset().top}, 'slow');
+            scrollTop: $(".table-container").offset().top}, 'slow');
     });
     
 }]);
