@@ -362,7 +362,6 @@ html {
   
 	.table {
 		display: table;
-		width: 750px;
 	}
 
 	.thead {
@@ -6630,7 +6629,7 @@ body {
   .jumbotron .h1 {
     color: inherit;
     font-weight: 800;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     margin-top: 30px
   }
 
@@ -7982,7 +7981,6 @@ p{
 
 .container.table-container.about_us {
   margin-top: 2rem;
-  width: 100%;
 }
 
 .events_section .alternative-table #table{
@@ -7995,7 +7993,7 @@ p{
 
 .alternative-table .row:first-child{
   background: #767676;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 .alternative-table .row:nth-child(even){
@@ -8026,6 +8024,9 @@ p{
   border: none;
   display: inline-block;
   width: auto;
+  @include breakpoint(xs) {
+    width: 100%;
+  }
 }
 
 .form-group.button button:hover{
@@ -8045,7 +8046,7 @@ p{
 .message_section h2,
 .events_section h2,
 .hero_wrap .page-header h1 {
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-weight: 300;
   font-size: 6rem;
   position: relative;

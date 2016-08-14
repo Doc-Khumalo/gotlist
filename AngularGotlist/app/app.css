@@ -308,8 +308,7 @@ img {
     .new-table .rh {
       display: none; }
     .new-table .table {
-      display: table;
-      width: 750px; }
+      display: table; }
     .new-table .thead {
       display: table-header-group; }
     .new-table .tbody {
@@ -4643,7 +4642,6 @@ img {
   .test .jumbotron .h1 {
     color: inherit;
     font-weight: 800;
-    text-transform: uppercase;
     margin-top: 30px; }
   .test .jumbotron p {
     margin-bottom: 15px;
@@ -5517,8 +5515,7 @@ p {
   padding: 0; }
 
 .container.table-container.about_us {
-  margin-top: 2rem;
-  width: 100%; }
+  margin-top: 2rem; }
 
 .events_section .alternative-table #table {
   background: transparent; }
@@ -5527,8 +5524,7 @@ p {
   background: rgba(255, 255, 255, 0.06); }
 
 .alternative-table .row:first-child {
-  background: #767676;
-  text-transform: uppercase; }
+  background: #767676; }
 
 .alternative-table .row:nth-child(even) {
   background: rgba(0, 0, 0, 0.06); }
@@ -5554,6 +5550,9 @@ p {
   border: none;
   display: inline-block;
   width: auto; }
+  @media (max-width: 760px) {
+    .form-group.button button {
+      width: 100%; } }
 
 .form-group.button button:hover {
   background: #2c8560;
@@ -5569,7 +5568,6 @@ p {
 .message_section h2,
 .events_section h2,
 .hero_wrap .page-header h1 {
-  text-transform: uppercase;
   font-weight: 300;
   font-size: 6rem;
   position: relative;
